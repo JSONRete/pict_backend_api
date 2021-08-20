@@ -29,3 +29,8 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Items added after first commit
+/.DS_Store
+/Gemfile.lock
+/notes.md
