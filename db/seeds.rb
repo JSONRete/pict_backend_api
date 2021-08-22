@@ -12,23 +12,10 @@ require 'faker'
 Info.destroy_all
 Tool.destroy_all
 
-infos = 12.times.map do
-    Info.create(key: Faker::Music.key)
-  end
+tools = Tool.create([{ name: 'MPC3000' }, { name: 'SP-1200' }, { name: 'Pro Tools®' }, { name: 'Logic Pro X' }, { name: 'SP-303' }, { name: 'SP-404' }, { name: 'S2400' }, { name: 'MASCHINE' }, { name: 'Ableton Live' }])
 
 
+50.times do 
+  Info.create(name: Faker::Quote.famous_last_words, tempo: rand(80...140),  key: Faker::Music.key, tool: tools.sample)
+end
 
-mpc = Tool.create(name: 'MPC3000')
-sp = Tool.create(name: 'SP-1200')
-pt = Tool.create(name: 'Pro Tools®')
-lx = Tool.create(name: 'Logic Pro X')
-303 = Tool.create(name: 'SP-303')
-404 = Tool.create(name: 'SP-404')
-isla = Tool.create(name: 'S2400')
-ni = Tool.create(name: 'MASCHINE')
-al = Tool.create(name: 'Ableton Live')
-
-Info.create([
-    {name: 'Pop Heart', tempo: 120,  key: info.infos, tool: mpc},
-
-])
