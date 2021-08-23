@@ -3,9 +3,11 @@ class InfosController < ApplicationController
 
   # GET /infos
   def index
-    @infos = Info.all
+    infos = Info.all
+    render json: InfoSerializer.new(infos)
 
-    render json: @infos
+
+    # render json: @infos
   end
 
   # GET /infos/1
@@ -18,18 +20,18 @@ class InfosController < ApplicationController
     @info = Info.new(info_params)
 
     if @info.save
-      render json: @info, status: :created, location: @info
+      render json: info, status: :created, location: info
     else
-      render json: @info.errors, status: :unprocessable_entity
+      render json: info.errors, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /infos/1
   def update
     if @info.update(info_params)
-      render json: @info
+      render json: info
     else
-      render json: @info.errors, status: :unprocessable_entity
+      render json: info.errors, status: :unprocessable_entity
     end
   end
 
