@@ -12,7 +12,9 @@ class InfosController < ApplicationController
 
   # GET /infos/1
   def show
-    render json: info
+    info = Info.find(params[:id])
+    render json: InfoSerializer.new(info)
+    # render json: info
   end
 
   # POST /infos
