@@ -1,4 +1,4 @@
-# class ToolsController < ApplicationController
+class ToolsController < ApplicationController
 #   before_action :set_tool, only: [:show, :update, :destroy]
 
 #   # GET /tools
@@ -51,4 +51,4 @@
 #     def tool_params
 #       params.require(:tool).permit(:name)
 #     end
-# end
+end
