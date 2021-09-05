@@ -20,9 +20,10 @@ class InfosController < ApplicationController
   # POST /infos
   def create
     info = Info.new(info_params)
+    info.tool = Tool.last
 
     if info.save
-      render json: info, status: :created, location: info
+      render json: InfoSerializer.new(info)
     else
       render json: info.errors, status: :unprocessable_entity
     end
@@ -40,16 +41,18 @@ class InfosController < ApplicationController
   # DELETE /infos/1
   def destroy
     info.destroy
+    render json: {message: "Production Info #{info.name} Successfully Delete!"}
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_info
-      info = Info.find(params[:id])
+      info = Info.find(params[:id]) 
     end
 
     # Only allow a list of trusted parameters through.
     def info_params
+      # params.require(:info).permit(:name, :tempo, :key)
       params.require(:info).permit(:name, :tempo, :key, :tool_id)
     end
 end
