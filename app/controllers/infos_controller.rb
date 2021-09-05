@@ -31,6 +31,7 @@ class InfosController < ApplicationController
 
   # PATCH/PUT /infos/1
   def update
+    info = Info.find(params[:id]) 
     if info.update(info_params)
       render json: info
     else
@@ -40,8 +41,9 @@ class InfosController < ApplicationController
 
   # DELETE /infos/1
   def destroy
+    info = Info.find(params[:id]) 
     info.destroy
-    render json: {message: "Production Info #{info.name} Successfully Delete!"}
+    render json: {message: "Production Info '#{info.name}' successfully Delete!"}
   end
 
   private
