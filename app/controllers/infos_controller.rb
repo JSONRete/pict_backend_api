@@ -43,7 +43,7 @@ class InfosController < ApplicationController
   def destroy
     info = Info.find(params[:id]) 
     info.destroy
-    render json: {message: "Production Info '#{info.name}' successfully Delete!"}
+    render json: {message: "Production Info '#{info.name}' successfully deleted!"}
   end
 
   private
