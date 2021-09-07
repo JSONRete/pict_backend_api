@@ -1,4 +1,12 @@
 class ToolsController < ApplicationController
+    def index 
+        tools = Tool.all 
+        render json: ToolSerializer.new(tools, include: [:infos])
+    end 
+end
+
+
+    
 #   before_action :set_tool, only: [:show, :update, :destroy]
 
 #   # GET /tools
@@ -51,4 +59,4 @@ class ToolsController < ApplicationController
 #     def tool_params
 #       params.require(:tool).permit(:name)
 #     end
-end
+# end
