@@ -20,8 +20,6 @@ class InfosController < ApplicationController
   # POST /infos
   def create
     info = Info.new(info_params)
-    info.tool = Tool.last
-
     if info.save
       render json: InfoSerializer.new(info)
     else
