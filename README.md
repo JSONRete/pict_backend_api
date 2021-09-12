@@ -8,12 +8,12 @@
 
 Run following from terminal:
 ```
-- `bundle install`
-- `run bundle install`
-- `rails db:create`
-- `rails db:migrate`
-- `rails db:seed`
-- `rails server`
+- bundle install
+- run bundle install
+- rails db:create
+- rails db:migrate
+- rails db:seed
+- rails server
 ```
 ---
 
