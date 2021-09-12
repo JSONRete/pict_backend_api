@@ -4,15 +4,21 @@ __Production Information - Creation Tool__ is a _Single Page Application_ with t
 
 ## Installing / Getting started
 
-For: `pict_backend_api`\
-Run `bundle install`; this will install gem dependencies from the included `Gemfile` generating the needed `Gemfile.lock` file.\
-`bundle install`
+`For:`[Backend:](https://github.com/JSONRete/pict_backend_api)\
+Run Following:
+-`bundle install`
+-`run bundle install`
+-`rails db:create`
+-`rails db:migrate`
+-`rails db:seed`
+-`rails s`
 
-For: https://github.com/JSONRete/pict_frontend
+`For:`[Frontend:](https://github.com/JSONRete/pict_frontend)\
+With backend of the app up and running, from you frontend open the file `index.html` in your preferred browser. 
 
 ## Usage
 
-This Ruby on Rails application will function on a local server simulating an online experience. Use the Ruby on Rails Server or your preferred environment to accomplish this.
+This _Single Page Application_ will function on a local server simulating an online experience. Use the Ruby on Rails Server or your preferred environment and browser to accomplish this.
 [Rails Server](https://guides.rubyonrails.org/getting_started.html)
 
 ### Built With
