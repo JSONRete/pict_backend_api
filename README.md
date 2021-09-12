@@ -4,9 +4,9 @@ __Production Information - Creation Tool__ is a _Single Page Application_ with t
 
 ## Installing / Getting started
 
-For `pict_backend_api`
-Run `bundle install`; this will install gem dependencies from the included `Gemfile` generating the needed `Gemfile.lock` file.
-`bundle install`
+For `pict_backend_api`\
+Run `bundle install`; this will install gem dependencies from the included `Gemfile` generating the needed `Gemfile.lock` file.\
+`bundle install`\
 
 ## Usage
 
