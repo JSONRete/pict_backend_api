@@ -25,6 +25,21 @@ Ruby
 ```google chrome
 Google Chrome
 ```
+
+```json
+json
+```
+```html
+html
+```
+```js
+js
+```
+```css
+css
+```
+
+
 ```json
    // code for coloring
 ```
