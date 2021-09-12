@@ -4,17 +4,22 @@
 
 ## Installing / Getting started
 
-`For:` [Backend](https://github.com/JSONRete/pict_backend_api)\
+`For:` [Backend](https://github.com/JSONRete/pict_backend_api)
+
 Run following from terminal:
+```
 - `bundle install`
 - `run bundle install`
 - `rails db:create`
 - `rails db:migrate`
 - `rails db:seed`
-- `rails s`
+- `rails server`
+```
+---
 
-`For:` [Frontend](https://github.com/JSONRete/pict_frontend)\
-With backend up and running, from frontend open `index.html` in your preferred web browser. 
+`For:` [Frontend](https://github.com/JSONRete/pict_frontend)
+
+With backend server running, from frontend open `index.html` in your preferred web browser. 
 
 ## Usage
 
@@ -26,7 +31,6 @@ This _Single Page Application_ will function on a local server simulating an onl
 Ruby on Rails, Ruby, Active Record, Html, CSS, JavaScript
 
 ### Prerequisites
-
 ```ruby
 Ruby
 ```
