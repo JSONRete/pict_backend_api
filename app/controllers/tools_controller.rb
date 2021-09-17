@@ -1,7 +1,8 @@
 class ToolsController < ApplicationController
     def index 
         tools = Tool.all 
-        render json: ToolSerializer.new(tools, include: [:infos])
+        # render json: ToolSerializer.new(tools, include: [:infos])
+        render json: ToolSerializer.new(tools)
     end 
 end
 

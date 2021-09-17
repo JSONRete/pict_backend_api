@@ -1,3 +1,3 @@
 class Info < ApplicationRecord
-  belongs_to :tool
+  # belongs_to :tool
 end

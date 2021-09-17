@@ -4,7 +4,9 @@ class InfosController < ApplicationController
   # GET /infos
   def index
     infos = Info.all
-    render json: InfoSerializer.new(infos, include: [:tool])
+    # render json: InfoSerializer.new(infos, include: [:tool])
+    render json: InfoSerializer.new(infos)
+
 
 
     # render json: infos
